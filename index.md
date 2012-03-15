@@ -12,12 +12,37 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 ## Update Author Attributes
 
 In `_config.yml` remember to specify your own data:
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-    
+{% sourcecode java %}
+package org.springframework.samples.petclinic;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+/**
+ * Simple JavaBean domain object representing a list of veterinarians. Mostly here to be used for the 'vets'
+ * {@link org.springframework.web.servlet.view.xml.MarshallingView}.
+ *
+ * @author Arjen Poutsma
+ */
+@XmlRootElement
+public class Vets {
+
+  private List<Vet> vets;
+
+  @XmlElement
+  public List<Vet> getVetList() {
+    if (vets == null) {
+      vets = new ArrayList<Vet>();
+    }
+    return vets;
+  }
+
+}
+
+{% endsourcecode %}
+
     title : My Blog =)
     
     author :
