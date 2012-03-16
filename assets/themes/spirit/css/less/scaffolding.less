@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: @linkColorHover;
-  text-decoration: underline;
+  background-color: @linkColorHover;
+  color: @bodyBackground;
+}
+
+a:active {
+  background-color: lighten(@linkColorHover, 20%);
+  color: @bodyBackground;
 }

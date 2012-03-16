@@ -13,18 +13,11 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 
 In `_config.yml` remember to specify your own data:
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
-
-{% highlight ruby %}
+{% sourcecode ruby %}
 def foo
   puts 'foo'
 end
-{% endhighlight %}
+{% endsourcecode %}
 
     title : My Blog =)
     

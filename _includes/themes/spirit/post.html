@@ -1,12 +1,18 @@
 <div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
+  <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
+  <div class="span3">
+    <h4><strong>{{ page.date | date: "%B %e, %Y" }} <small>. {{ page.category }} . <a href="http://bigfei.net{{ page.url }}#disqus_thread" disqus_url="http://bigfei.net{{ page.url }}#!newthread"></a></small></strong></h4>
+  </div>    
+  <div class="pull-right">
+      <p>{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a>   {% endif %}   {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a>   {% endif %} </p>
+  </div>
 </div>
 
 <div class="row">
   <div class="span8">
     {{ content }}
     <hr>
-    <div class="pagination">
+    <!--div class="pagination">
       <ul>
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
@@ -20,7 +26,7 @@
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
       </ul>
-    </div>
+    </div-->
     <hr>
     {% include JB/comments %}
   </div>

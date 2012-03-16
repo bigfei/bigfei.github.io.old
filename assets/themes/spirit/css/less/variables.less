@@ -39,8 +39,8 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @pink;
+@linkColorHover:        @linkColor;
 
 
 // Typography
@@ -149,8 +149,8 @@
 @navbarLinkColor:                 @grayLight;
 @navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @navbarLinkColorHover;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @navbarBackground;
+@navbarLinkBackgroundHover:       @linkColor;
+@navbarLinkBackgroundActive:      @navbarLinkBackgroundHover;
 
 @navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;
