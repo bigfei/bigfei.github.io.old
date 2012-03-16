@@ -4,12 +4,15 @@
     <h4><strong>{{ page.date | date: "%B %e, %Y" }} <small>. {{ page.category }} . <a href="http://bigfei.net{{ page.url }}#disqus_thread" disqus_url="http://bigfei.net{{ page.url }}#!newthread"></a></small></strong></h4>
   </div>    
   <div class="pull-right">
-      <p>{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a>   {% endif %}   {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a>   {% endif %} </p>
+      <p>
+        {% if page.previous %} <a href="{{ BASE_PATH }}{{page.previous.url}}" title="{{page.previous.title}}"><i class="icon-chevron-left"></i></a>{% endif %}
+        {% if page.next %}<a href="{{ BASE_PATH }}{{page.next.url}}" title="{{page.next.title}}"><i class="icon-chevron-right"></i></a>{% endif %} 
+      </p>
   </div>
 </div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span9">
     {{ content }}
     <hr>
     <!--div class="pagination">
@@ -31,7 +34,7 @@
     {% include JB/comments %}
   </div>
   
-  <div class="span4">
+  <div class="span3">
     <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
