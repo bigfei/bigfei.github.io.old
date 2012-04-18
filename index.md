@@ -16,15 +16,13 @@ tagline: Life, Thought, Code
     <h2>Books I am reading</h2>
     {% include widgets/douban.html %}
   </div>
-  <div class="span4">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
+  <div id="gh-badge" class="span4">
+    <h2>Codes I am interesting in</h2>
+    {% include widgets/github.html %}
   </div>
   <div class="span4">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
+    <h2>Life I am living</h2>
+    {% include widgets/weibo.html %}
   </div>
 </div>
 <div class="row-fluid">
