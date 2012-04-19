@@ -6,7 +6,7 @@ module Jekyll
     def setup
       return if @setup
       require 'less'
-      @less_path = ['./assets/themes/spirit/css/less'] # Change this to change where LESS files are stored
+      @less_path = ['./assets/themes/spirit/css'] # Change this to change where LESS files are stored
       @setup = true
     rescue LoadError
       STDERR.puts 'You are missing the library required for less. Please run:'
@@ -25,7 +25,7 @@ module Jekyll
     def convert(content)
       setup
       begin
-        Less::Parser.new( :paths => @less_path ).parse(content).to_css
+        Less::Parser.new( :paths => @less_path ).parse(content).to_css(:compress => true)
       rescue => e
         puts "Less Exception: #{e.message}"
       end
