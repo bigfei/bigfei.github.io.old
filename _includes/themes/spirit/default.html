@@ -47,7 +47,7 @@
             <ul class="nav">	            
 	            {% assign pages_list = site.pages %}{% assign group = 'navigation' %}{% include JB/pages_list %}
             </ul>
-            <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+            <p class="navbar-text pull-right">About Me</p>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -81,18 +81,9 @@
           }
         });
         $.github('/users/bigfei', function(data){
-          console.log(data);
           var badge = $('#gh-badge');
 
           if(!data.error){
-            /*badge.find('.name').text(user.name);
-            badge.find('.blog').text(user.blog).attr('href', user.blog);
-            badge.find('.repos').text(user.public_repo_count);
-            badge.find('.gists').text(user.public_gist_count);
-            $badge.find('.followers').text(user.followers_count);
-            $badge.find('.following').text(user.following_count);
-            $badge.find('.thumb').attr('src', gravatar_url(user.gravatar_id));
-            $badge.find('.link').attr('href', 'http://github.com/'+user.login);*/
             badge.find('#user-avatar .avatar').attr('src', data.avatar_url);
             badge.find('#user-avatar a').attr('href', data.html_url);
             badge.find('#user-overview h2 a').attr('href', data.html_url).attr('title', data.name).text(data.login);
@@ -109,7 +100,6 @@
 
     </script>
     <script src="{{ ASSET_PATH }}/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="http://kentbrewster.com/github-badge/behavior.js">{"user":"bigfei"}</script>
 	{% include JB/analytics %}
 	
   </body>
