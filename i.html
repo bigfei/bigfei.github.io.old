@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    
+    <meta name="author" content="Felix">
+
+    <!-- Le styles -->
+    <link href="/assets/themes/spirit/css/bootstrap.min.css" rel="stylesheet">   
+    <style type="text/css">
+      body {
+        padding-bottom: 40px;
+        padding-top: 60px;
+      }
+
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="/assets/themes/spirit/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons 
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Spirited Away</a>
+          <div class="nav-collapse">
+            <ul class="nav">	            
+	            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+            </ul>
+            <p class="navbar-text pull-right">About Me</p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">       
+        <div class="span12">
+          
+<div class="page-header">
+  <h1>Hello World! <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    
+<p>Read <a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html">Jekyll Quick Start</a></p>
+
+<p>Complete usage and documentation available at: <a href="http://jekyllbootstrap.com">Jekyll Bootstrap</a></p>
+
+<h2 id="update-author-attributes">Update Author Attributes</h2>
+
+<p>In <code>_config.yml</code> remember to specify your own data:</p>
+
+<div class="data type-ruby">
+<table cellpadding="0" cellspacing="0">
+<tr><td><pre class="line_numbers"><span id="L1" rel="#L1">1</span>
+<span id="L2" rel="#L2">2</span>
+<span id="L3" rel="#L3">3</span>
+</pre></td>
+<td width="100%">
+<div class="highlight"><pre><div class="line" id="LC1"><span class="k">def</span> <span class="nf">foo</span>
+</div><div class="line" id="LC2">&nbsp;&nbsp;<span class="nb">puts</span> <span class="s1">&#39;foo&#39;</span>
+</div><div class="line" id="LC3"><span class="k">end</span>
+</div></pre></div>
+</td>
+</tr>
+</table>
+</div>
+
+<pre><code>title : My Blog =)
+
+author :
+  name : Name Lastname
+  email : blah@email.test
+  github : username
+  twitter : username
+</code></pre>
+
+<p>The theme should reference these variables whenever needed.</p>
+
+<h2 id="sample-posts">Sample Posts</h2>
+
+<p>This blog contains sample posts which help stage pages and blog data.
+When you don&rsquo;t need the samples anymore just delete the <code>_posts/core-samples</code> folder.</p>
+
+<pre><code>$ rm -rf _posts/core-samples
+</code></pre>
+
+<p>Here&rsquo;s a sample &ldquo;posts list&rdquo;.</p>
+
+<ul class="posts">
+  
+    <li><span>29 Dec 2011</span> &raquo; <a href="/lessons/jekyll-introduction">Jekyll Introduction</a></li>
+  
+</ul>
+
+<h2 id="to-do">To-Do</h2>
+
+<p>This theme is still unfinished. If you&rsquo;d like to be added as a contributor, <a href="http://github.com/plusjade/jekyll-bootstrap">please fork</a>!
+We need to clean up the themes, make theme usage guides with theme-specific markup examples.</p>
+
+
+  </div>
+</div>
+
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Felix 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>        
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	  <script type="text/javascript">
+	    !window.jQuery && document.write('<script src="/assets/themes/spirit/js/jquery-1.7.1.min.js"><\/script>');
+       (function($){
+        $.extend({
+          github: function( url, data, callback ) {
+            return $.getJSON('https://api.github.com' + url, data, callback);
+          }
+        });
+        $.github('/users/bigfei', function(data){
+          var badge = $('#gh-badge');
+
+          if(!data.error){
+            badge.find('#user-avatar .avatar').attr('src', data.avatar_url);
+            badge.find('#user-avatar a').attr('href', data.html_url);
+            badge.find('#user-overview h2 a').attr('href', data.html_url).attr('title', data.name).text(data.login);
+            badge.find('#user-overview p').text(data.bio);
+            badge.find('#user-info #repos strong').text(data.public_repos);
+            badge.find('#user-info #gists strong').text(data.public_gists);
+            badge.find('#user-info #followers strong').text(data.followers);
+            badge.find('#user-info #following strong').text(data.following);
+          }else{
+            $badge.before(data.error);
+          }
+        });
+     })(jQuery);
+
+    </script>
+    <script src="/assets/themes/spirit/js/bootstrap.min.js" type="text/javascript"></script>
+	
+	
+  </body>
+</html>
+

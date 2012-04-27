@@ -1,0 +1,12 @@
+
+http://bigfei.net/archive.html
+http://bigfei.net/assets/themes/spirit/css/bootstrap.min.css
+http://bigfei.net/atom.xml
+http://bigfei.net/categories.html
+http://bigfei.net/i.html
+http://bigfei.net/index.html
+http://bigfei.net/pages.html
+http://bigfei.net/sitemap.txt
+http://bigfei.net/tags.html
+
+http://bigfei.net/lessons/jekyll-introduction
