@@ -170,12 +170,12 @@
        (function($){
         $.extend({
           github: function( url, data, callback ) {
-            return $.getJSON('https://api.github.com' + url+'?callback', data, callback);
+            return $.getJSON('https://api.github.com' + url+'?callback=?', data, callback);
           }
         });
-        $.github('/users/bigfei', function(data){
+        $.github('/users/bigfei', function(d){
           var badge = $('#gh-badge');
-
+          var data = d.data;
           if(!data.error){
             badge.find('#user-avatar .avatar').attr('src', data.avatar_url);
             badge.find('#user-avatar a').attr('href', data.html_url);
