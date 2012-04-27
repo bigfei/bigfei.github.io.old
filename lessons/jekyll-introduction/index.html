@@ -632,7 +632,7 @@ or jump right into <a href="">Usage</a> if you&rsquo;d like.</p>
        (function($){
         $.extend({
           github: function( url, data, callback ) {
-            return $.getJSON('https://api.github.com' + url, data, callback);
+            return $.getJSON('https://api.github.com' + url+'?callback', data, callback);
           }
         });
         $.github('/users/bigfei', function(data){
